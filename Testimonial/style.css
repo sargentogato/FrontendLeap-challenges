@@ -1,0 +1,89 @@
+@import './variables.css';
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: var(--bg-main-color);
+}
+
+.main {
+  width: var(--main-width);
+  height: var(--main-height);
+  background-color: var(--bg-card);
+  border: 25px solid var(--border-color);
+  padding: 25px 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__box-header {
+  display: flex;
+}
+
+.card__picture,
+.card__text {
+  flex-basis: 25%;
+}
+
+.card__picture {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.card__picture>img {
+  width: 70%;
+}
+
+.card__text {
+  flex-grow: 2;
+  margin: auto;
+}
+
+.card__box-dots {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid;
+  padding-bottom: 15px;
+}
+
+.card__navigation-dots {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.card__dot {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: var(bg-dots);
+  border: none;
+}
+
+.card__name {
+  font-weight: 400;
+}
+
+.card__arrow-box {
+  display: flex;
+  gap: 45px;
+}
+
+button[class^="card__arrow"] {
+  font-size: 4rem;
+  font-weight: 300;
+  background-color: white;
+  border: none;
+}
+
+.card__dot:nth-child(2) {
+  background-color: black;
+}
