@@ -2,7 +2,8 @@
   --bg-main-color: hsl(175, 32%, 92%);
   --border-color: hsl(175, 32%, 85%);
   --bg-card: hsl(0, 0%, 100%);
-  --bg-dots: hsl(175, 30%, 92%);
+  --bg-dots: hsl(175, 30%, 80%);
+  --arrow-color: hsl(0, 0%, 0%);
   --main-width: 745px;
   --main-height: 412px;
   --card-width: 527px;

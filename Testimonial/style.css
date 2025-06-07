@@ -64,7 +64,7 @@ body {
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  background-color: var(bg-dots);
+  background-color: var(--bg-dots);
   border: none;
 }
 
@@ -78,10 +78,13 @@ body {
 }
 
 button[class^="card__arrow"] {
-  font-size: 4rem;
-  font-weight: 300;
-  background-color: white;
   border: none;
+  background-color: var(--bg-card);
+  margin-top: 20px;
+}
+
+button[class^="card__arrow"]>img {
+  width: 15px;
 }
 
 .card__dot:nth-child(2) {
