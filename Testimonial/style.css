@@ -22,6 +22,7 @@ body {
 .card {
   display: flex;
   flex-direction: column;
+  width: var(--card-width);
 }
 
 .card__box-header {
@@ -39,11 +40,12 @@ body {
 }
 
 .card__picture>img {
-  width: 70%;
+  width: 60%;
+  height: 85%;
 }
 
 .card__text {
-  flex-grow: 2;
+  flex-grow: 3;
   margin: auto;
 }
 
@@ -52,6 +54,7 @@ body {
   justify-content: space-between;
   border-bottom: 2px solid;
   padding-bottom: 15px;
+  margin-top: 15px;
 }
 
 .card__navigation-dots {
@@ -68,8 +71,18 @@ body {
   border: none;
 }
 
+.card__dot--selected {
+  background-color: black;
+}
+
 .card__name {
   font-weight: 400;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.card__position {
+  font-size: 0.8rem;
 }
 
 .card__arrow-box {
@@ -87,6 +100,32 @@ button[class^="card__arrow"]>img {
   width: 15px;
 }
 
-.card__dot:nth-child(2) {
+/* .card__dot:nth-child(2) {
   background-color: black;
+} */
+
+/* Animation */
+.card__text,
+.card__user-name {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.card--hidden-left {
+  opacity: 0;
+}
+
+.card--hidden-right {
+  opacity: 0;
+}
+
+.card__picture img {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.img-hidden {
+  opacity: 0;
+  transform: scale(0.2);
 }

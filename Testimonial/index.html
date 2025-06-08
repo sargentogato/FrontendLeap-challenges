@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
   <title>Testimonial</title>
 </head>
 
@@ -22,7 +23,7 @@
       </header>
       <div class="card__box-dots">
         <div class="card__navigation-dots">
-          <button class="card__dot"></button>
+          <button class="card__dot card__dot--selected"></button>
           <button class="card__dot"></button>
           <button class="card__dot"></button>
           <button class="card__dot"></button>
@@ -33,10 +34,10 @@
         </div>
       </div>
       <div class="card__arrow-box">
-        <button class="card__arrow-left">
+        <button id="left" class="card__arrow-left">
           <img src="./assets/arrowLeft.svg" alt="">
         </button>
-        <button class="card__arrow-right">
+        <button id="right" class="card__arrow-right">
           <img src="./assets/arrowRight.svg" alt="">
         </button>
       </div>
